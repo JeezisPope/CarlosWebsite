@@ -1,0 +1,177 @@
+:root{/*Codigo para definir "variables"*/
+    --blanco: #ffffff;
+    --oscuro: #000000;
+    --primario: #fff200;
+    --secundario: #014f58;
+    --gris: #414141;
+}
+/*Usar ese code para todos los proyectos*/
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    /*scroll-snap-type: y proximity;  Este Comando es utilizado para que el mouse vaya por las secciones*/
+}
+
+h1,h2,h3,h4{
+    color: var(--blanco);
+    font-family: 'Raleway', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.servicios,
+.navegacion_principal,
+.formulario{
+scroll-snap-align: center;
+scroll-snap-stop: always;
+}
+
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+    background-size: cover;
+}
+
+#particles-js {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    margin: 0px;
+    z-index: -1;
+    background-color: #000000;
+    background-size: cover;
+    opacity: 0.3;
+}
+
+@media(min-width: 768px) {
+    body{
+        overflow: hidden;
+    }
+}
+
+
+.navegacion{
+    display: flex;
+    flex-direction: column;  
+    padding-bottom: 5rem;
+}
+
+
+
+@media(min-width: 768px) {
+    .navegacion{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;   
+        padding-left: 20rem;
+        padding-right: 20rem;
+    } 
+
+    .navegacion a{
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+}
+    
+}
+
+.centrado{
+    display: grid;
+    justify-content: center;
+}
+
+.navegacion a{
+    text-decoration: none;
+}
+
+.links{
+    text-align: center;
+    color: #ffffff;
+    transition: color 1s ease;
+
+}
+
+.links:hover{
+    cursor: pointer;
+    color: var(--primario);
+}
+
+.video{
+    width: 20rem;
+    border-radius: 100%;
+}
+
+@media(min-width: 768px) {
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 8rem;
+    }
+
+    .imagen_presentacion{
+        width: 10rem;
+        border-radius: 5%;
+        align-items: center;
+    }
+}
+.grid{
+    display: grid;
+}
+
+.imagen_presentacion{
+    width: 50rem;
+    border-radius: 5%;
+}
+.btn_inicio{
+    text-align: center;
+}
+.btn{
+    text-decoration: none;
+    text-transform: uppercase; 
+    background-color: var(--gris);
+    color: var(--blanco);
+    padding: 1.5rem;
+    font-size: 2rem;   
+    font-weight: bold;
+    border-radius: .5rem;
+    border: none;   
+    
+/*    transition: background-color 2s ease-in-out;*/
+    transition: all 1s ease-in-out;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #1f1f1f;
+    color: #fff200;
+}
+
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+}
+
+@media (min-width: 768px){
+    .dos__columnas{
+        padding: 5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+}
+
+footer{
+    padding: 3rem;
+}
